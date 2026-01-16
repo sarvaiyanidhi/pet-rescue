@@ -1,6 +1,6 @@
 class Organizations::Staff::AdoptersController < Organizations::BaseController
   layout "dashboard"
-  include ::Pagy::Backend
+  include Pagy::Method
 
   def index
     authorize! Person

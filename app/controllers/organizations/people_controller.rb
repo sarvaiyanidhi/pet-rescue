@@ -1,7 +1,7 @@
 module Organizations
   class PeopleController < Organizations::BaseController
     layout "dashboard", only: %i[index show]
-    include ::Pagy::Backend
+    include Pagy::Method
 
     skip_before_action :verify_person_in_org, only: %i[new create]
     skip_verify_authorized only: %i[new create]

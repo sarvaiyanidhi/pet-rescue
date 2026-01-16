@@ -1,6 +1,6 @@
 class Organizations::Staff::FosterersController < Organizations::BaseController
   layout "dashboard"
-  include ::Pagy::Backend
+  include Pagy::Method
 
   before_action :authorize_user, only: %i[edit update]
 

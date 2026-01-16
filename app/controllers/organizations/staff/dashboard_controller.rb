@@ -5,7 +5,7 @@ class Organizations::Staff::DashboardController < Organizations::BaseController
   before_action :context_authorize!, only: %i[index pets_with_incomplete_tasks pets_with_overdue_tasks]
   before_action :set_pets_with_overdue_tasks, only: %i[index pets_with_overdue_tasks]
   before_action :set_pets_with_incomplete_tasks, only: :pets_with_incomplete_tasks
-  include Pagy::Backend
+  include Pagy::Method
 
   layout "dashboard"
 

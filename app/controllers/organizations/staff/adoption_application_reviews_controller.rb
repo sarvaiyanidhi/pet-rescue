@@ -1,7 +1,7 @@
 class Organizations::Staff::AdoptionApplicationReviewsController < Organizations::BaseController
   before_action :set_adopter_application, only: %i[edit update]
 
-  include ::Pagy::Backend
+  include Pagy::Method
 
   layout "dashboard"
 

@@ -1,5 +1,5 @@
 class Organizations::Staff::ManageFostersController < Organizations::BaseController
-  include ::Pagy::Backend
+  include Pagy::Method
 
   layout "dashboard"
 

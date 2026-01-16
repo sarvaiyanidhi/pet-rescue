@@ -1,7 +1,7 @@
 class Organizations::Staff::PetsController < Organizations::BaseController
   before_action :set_pet, only: [:show, :edit, :update, :destroy, :attach_images, :attach_files]
   before_action :show_alert_if_attachment_missing, only: [:attach_images, :attach_files]
-  include ::Pagy::Backend
+  include Pagy::Method
   include AttachmentManageable
 
   layout "dashboard"

@@ -1,6 +1,6 @@
 module Organizations
   class AdoptablePetsController < Organizations::BaseController
-    include ::Pagy::Backend
+    include Pagy::Method
 
     skip_before_action :authenticate_user!
     skip_verify_authorized only: %i[index show]

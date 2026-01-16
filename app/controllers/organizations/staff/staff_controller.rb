@@ -1,7 +1,7 @@
 module Organizations
   module Staff
     class StaffController < Organizations::BaseController
-      include ::Pagy::Backend
+      include Pagy::Method
 
       layout "dashboard"
 
