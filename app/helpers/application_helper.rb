@@ -1,5 +1,4 @@
 module ApplicationHelper
-
   #
   # Returns the path to the home page of the organization.
   #
